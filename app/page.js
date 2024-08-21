@@ -43,6 +43,13 @@ export default function Home() {
         <Typography variant="h4" components="h2">
           Features
         </Typography>
+        <Grid contained spacing={4}>
+          <Grid item xs={12} md ={4}>
+            <Typography variant ="h6">
+              Easy Text Input
+            </Typography>
+          </Grid>
+        </Grid>
       </Box>
     </Container>
   )
