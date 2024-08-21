@@ -24,7 +24,12 @@ export default function Home() {
 
         </Toolbar>
       </AppBar>
-      <Box>
+      <Box
+      sx={{
+        textAlign:'center',
+        my:4
+      }}
+      >
         <Typography variant="h2">Welcome to Flashcard Saas</Typography>
         <Typography variant="h5">
           {' '}
@@ -33,7 +38,11 @@ export default function Home() {
           <Button variant="contained" color="primary" sx={{mt:2}}>
             Get Started
           </Button>
-
+      </Box>
+      <Box sx ={{my:6}}>
+        <Typography variant="h4" components="h2">
+          Features
+        </Typography>
       </Box>
     </Container>
   )
