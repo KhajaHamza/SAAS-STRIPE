@@ -84,6 +84,8 @@ export default function Home() {
         borderColor:'grey.300',
         borderRadius:2
       }}>
+        <Typography variant="h5">Basic</Typography>
+        <Typography variant="h6">5$/month</Typography>
         <Grid item xs={12} md={4}>
           <Typography variant="h6" sx={{ color: '#f1c40f' }}>
             Easy Text Input
