@@ -84,8 +84,13 @@ export default function Home() {
         borderColor:'grey.300',
         borderRadius:2
       }}>
-        <Typography variant="h5">Basic</Typography>
-        <Typography variant="h6">5$/month</Typography>
+        <Typography variant="h5" gutterBottom >Basic</Typography>
+        <Typography variant="h6" gutterBottom>5$ / month</Typography>
+        <Typography>
+          {' '}
+          Access to Basic Flashcard and Limited Storage.
+        </Typography>
+        <Button variant="contained" color="primary">CHOOSE BASIC</Button>
         <Grid item xs={12} md={4}>
           <Typography variant="h6" sx={{ color: '#f1c40f' }}>
             Easy Text Input
