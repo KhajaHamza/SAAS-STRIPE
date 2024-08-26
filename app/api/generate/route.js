@@ -40,3 +40,26 @@ export async function POST(req){
     const flashcards=JSON.parse(completion.choices[0].message.content)
     return NextResponse.json(flashcards.flashcard)
 }
+
+const handleSubmit = async () => {
+  if (!text.trim()) {
+    alert('Please enter some text to generate flashcards.')
+    return
+  }
+
+  try {
+    const response = await fetch('/api/generate', {
+      method: 'POST',
+      body: text,
+    })
+
+    if (!response.ok) {
+      throw new Error('Failed to generate flashcards')
+    }
+
+    const data = await response.json()
+    setFlashcards(data)
+  } catch (error) {
+    console.error('Error generating flashcards:', error)
+    alert('An error occurred while generating flashcards. Please try again.')
+  }
